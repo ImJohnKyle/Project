@@ -1,4 +1,4 @@
-# John Kyle Uriarte – Portfolio (Portfolio Project)
+# John Kyle P. Uriarte | Portfolio
 
 Personal portfolio website built with plain HTML, CSS and JavaScript (no build tools needed).
 
