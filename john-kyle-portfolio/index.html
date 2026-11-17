@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio Project</title>
+<meta name="author" content="John Kyle Uriarte">
+<meta name="theme-color" content="#bfeaff">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="description" content="Portfolio of an IT student: web design, system analysis and development projects, certificates and contact details.">
+<meta property="og:title" content="Portfolio Project">
+<meta property="og:description" content="Web design, system analysis and development projects.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Main">
+  <div class="wrap pop">
+    <a class="logo" href="#home"><span class="avatar"><img src="images/profile.jpg" alt="" width="40" height="40"></span>John Kyle Uriarte</a>
+    <ul id="menu">
+      <li><a class="on" href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects &amp; Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="#contact">Hire me</a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <h1>Learn.<br>Build.<br>Repeat.</h1>
+      <p>Hi, I’m John Kyle Uriarte, an IT student who designs and builds friendly, easy-to-use websites and systems.</p>
+      <div class="cta">
+        <a class="btn pop" href="#projects">See my work</a>
+        <a class="btn alt pop" href="#contact">Say hello</a>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="blob" aria-hidden="true"></div>
+      <img class="me" src="images/profile.jpg" alt="Portrait of John Kyle Uriarte wearing sunglasses and a white shirt" width="800" height="800" fetchpriority="high">
+      <span class="sticker s1 pop" aria-hidden="true">Open to projects</span>
+      <span class="sticker s2 pop" aria-hidden="true">Always learning</span>
+    </div>
+  </div>
+</header>
+
+<div class="strip" aria-hidden="true"><div class="list"><span>Web design</span>•<span>Computer servicing</span>•<span>Networking</span>•<span>System analysis</span>•<span>UML</span>•<span>HTML &amp; CSS</span>•<span>Teamwork</span></div></div></div>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <h2>About me</h2>
+      <p>I’m a student at Cavite State University (CvSU) – Bacoor Campus, studying information technology. I enjoy turning ideas into clear designs, from use case diagrams on paper to colorful pages in the browser.</p>
+      <p>My interest in IT started long before college. I spent my free time fixing computers, debugging code, reverse engineering programs and troubleshooting problems. In senior high school I took the TVL track, ICT strand, with a specialization in Computer Systems Servicing (CSS), where I turned that curiosity into hands-on training.</p>
+      <p>I work well in a team. In class, my group planned an online food ordering system together, defining its users, features and requirements before any code was written.</p>
+      <p>My goal is to become a developer who builds useful, accessible products people enjoy using.</p>
+    </div>
+    <div class="skills">
+      <h3>Design &amp; web</h3>
+      <ul class="chips"><li>HTML5</li><li>CSS Flexbox &amp; Grid</li><li>Responsive design</li><li>UI design</li></ul>
+      <h3>Computer servicing</h3>
+      <ul class="chips"><li>PC assembly &amp; disassembly</li><li>Hardware troubleshooting</li><li>Software installation</li><li>BIOS setup</li><li>Preventive maintenance</li><li>Virus &amp; malware removal</li></ul>
+      <h3>Networking &amp; support</h3>
+      <ul class="chips"><li>Network cabling</li><li>Basic network configuration</li><li>Technical support</li><li>Documentation</li></ul>
+      <h3>Systems &amp; analysis</h3>
+      <ul class="chips"><li>UML use case diagrams</li><li>Requirements writing</li><li>Functional &amp; non-functional specs</li></ul>
+      <h3>Soft skills</h3>
+      <ul class="chips"><li>Teamwork</li><li>Communication</li><li>Problem solving</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="lead">A few things I’ve designed and built during my studies.</p>
+    <div class="grid projects">
+      <article class="card project pop">
+        <span class="tag">System design</span>
+        <div class="card-media"><button class="thumb" type="button" aria-label="View larger: use case diagram of the Online Food Ordering System"><img src="images/use-case-diagram.svg" alt="Use case diagram of the Online Food Ordering System. Primary actors on the left are the customer, restaurant staff and administrator. Inside the system boundary the customer registers, logs in, browses restaurants, views the menu, adds food to the cart, tracks orders and places orders. Place order includes make payment, apply voucher code extends place order, and pay cash on delivery and pay online are types of make payment. Restaurant staff manage the menu and update order status, and the administrator manages user accounts. The payment gateway is a secondary actor on the right, connected to pay online." width="1100" height="760" loading="lazy"></button></div>
+        <div class="card-body">
+          <h3>Online Food Ordering System</h3>
+          <p>A group requirements analysis and modeling project that plans how customers browse restaurants, order food and pay online, and how restaurant staff and administrators run the service.</p>
+          <ul>
+          <li>A UML use case diagram with a subject boundary, three primary actors (customer, restaurant staff and administrator) on the left, and one secondary actor (the payment gateway) on the right</li>
+          <li>Relationships: place order includes make payment, apply voucher code extends place order, and pay cash on delivery and pay online are specialized types of make payment</li>
+          <li>8 functional requirements, such as accounts, cart, ordering, payment choice, order tracking and status updates</li>
+          <li>5 non-functional requirements covering security, performance and operational needs, such as password and payment encryption, fast page loads, support for many users and use on any platform</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card project pop">
+        <span class="tag">Web design</span>
+        <div class="card-media"><button class="thumb" type="button" aria-label="View larger: Sip Club website home page"><img src="images/sip-club-home.jpg" alt="Home page of the Sip Club website showing the headline Sip. Smile. Repeat., a pink bubble tea cup on a yellow blob and a strip of drink types" width="1200" height="598" loading="lazy"></button></div>
+        <div class="card-body">
+          <h3>Sip Club website</h3>
+          <p>A responsive website concept for a bubble tea shop, made as a student UI design exercise.</p>
+          <ul>
+          <li>Four sections: a home page, a menu of four favorite drinks with prices, a “why us” highlights row, and shop hours with an order call-to-action</li>
+          <li>A bold, playful style with thick outlines, offset shadows, the Fredoka font and a yellow, pink and sky blue palette</li>
+          <li>Built with HTML and CSS only, using Grid, Flexbox and light and dark modes</li>
+          <li>Responsive: the menu goes from four columns to two to one on smaller screens</li>
+          </ul>
+          <a class="btn alt" href="projects/sip-club/index.html" target="_blank" rel="noopener">View live demo</a>
+        </div>
+      </article>
+      <article class="card project pop">
+        <span class="tag">Personal</span>
+        <div class="card-media"><div class="panel"><img src="images/profile.jpg" alt="Portrait of John Kyle Uriarte" width="800" height="800" loading="lazy"></div></div>
+        <div class="card-body">
+          <h3>This portfolio</h3>
+          <p>My personal website, made to introduce myself and share my skills, projects and what I’m learning.</p>
+          <ul>
+          <li>One page with four sections: Home, About, Projects &amp; Learning and Contact</li>
+          <li>A playful look with bold outlines, a yellow, sky blue, mint and coral color scheme, and light and dark modes</li>
+          <li>Built with HTML, CSS (Grid, Flexbox and animations) and a little JavaScript, with no frameworks</li>
+          <li>Works on phones, tablets and computers, with a mobile menu, SEO metadata and image descriptions</li>
+          <li>Designed by me and set up to be hosted for free on GitHub Pages</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <p class="note">More projects will be added here as I finish them.</p>
+
+    <h2 class="sub">Certificates</h2>
+    <div class="certs">
+      <article class="cc pop">
+        <button class="thumb" type="button" aria-label="View larger: Next-Gen Networkers: CompTIA Network and Security"><img src="images/cert-comptia-network-security.jpg" alt="Certificate of Appreciation awarded to John Kyle P. Uriarte for the webinar Next-Gen Networkers: CompTIA Network and Security, held on September 18, 2026" width="1200" height="848" loading="lazy"></button>
+        <span class="tag">Certificate of Appreciation</span>
+        <h3>Next-Gen Networkers: CompTIA Network and Security</h3>
+        <p>1-hour online webinar via Google Meet, September 18, 2026. Organized by Ethel Programming Computer Programming Services (EPCPS).</p>
+      </article>
+      <article class="cc pop">
+        <button class="thumb" type="button" aria-label="View larger: Networking and Data Security"><img src="images/cert-networking-data-security.jpg" alt="Certificate of Participation awarded to John Kyle P. Uriarte for the Networking and Data Security webinar, held on September 16, 2026" width="1200" height="848" loading="lazy"></button>
+        <span class="tag">Certificate of Participation</span>
+        <h3>Networking and Data Security</h3>
+        <p>1-hour 30-minute online webinar via Google Meet, September 16, 2026. Organized by Ethel Programming Computer Programming Services (EPCPS).</p>
+      </article>
+    </div>
+
+    <h2 class="sub">Currently learning</h2>
+    <div class="grid learn">
+      <div class="cert pop"><span class="ico" aria-hidden="true">⚡</span><div><h3>JavaScript</h3><p>Goal: add interactive features like menus, forms and filters to my sites.</p></div></div>
+      <div class="cert pop"><span class="ico" style="background:var(--mint)" aria-hidden="true">🌿</span><div><h3>Git &amp; GitHub</h3><p>Goal: save my work in repositories and publish every project online.</p></div></div>
+      <div class="cert pop"><span class="ico" style="background:#ffc7b0" aria-hidden="true">🎨</span><div><h3>UI/UX design</h3><p>Goal: plan layouts and user flows before building them.</p></div></div>
+      <div class="cert pop"><span class="ico" style="background:var(--mint)" aria-hidden="true">🐍</span><div><h3>Python</h3><p>Goal: write small programs and automate everyday tasks.</p></div></div>
+      <div class="cert pop"><span class="ico" style="background:#c4d2ff" aria-hidden="true">🗄️</span><div><h3>Databases &amp; SQL</h3><p>Goal: store and look up data such as menus, orders and users.</p></div></div>
+      <div class="cert pop"><span class="ico" style="background:#ffc7b0" aria-hidden="true">🐘</span><div><h3>PHP &amp; MySQL</h3><p>Goal: turn my food ordering system design into a working website.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="box reach pop">
+      <h2>Let’s talk</h2>
+      <p>Have a project, internship or idea? Send me a message and I’ll reply soon.</p>
+      <ul>
+        <li>Email: <a href="mailto:johnkyleuriarte2309@gmail.com">johnkyleuriarte2309@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/ImJohnKyle" rel="noopener">github.com/ImJohnKyle</a></li>
+        <li>Facebook: <a href="https://www.facebook.com/johnkyle.uriarte.3" target="_blank" rel="noopener">John Kyle Uriarte</a></li>
+        <li>Phone: <a href="tel:+639998521172">0999 852 1172</a></li>
+        <li>Location: Bacoor, Cavite, Philippines</li>
+      </ul>
+    </div>
+    <div class="box msg pop">
+      <h2>Send a message</h2>
+      <div>
+        <label for="n">Your name</label><input id="n" autocomplete="name">
+        <label for="m">Message</label><div class="ta"><textarea id="m"></textarea><span class="grip" aria-hidden="true" title="Drag to resize"></span></div>
+        <button class="btn alt pop" id="send" type="button">Send by email</button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="plan pop">
+      <h3>Update plan</h3>
+      <p>I add each new school project and certificate as soon as it’s finished, review my skills list every semester, and check that all links still work once a month.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 John Kyle Uriarte. All rights reserved.</span><span><a href="#home">Back to top</a></span></div>
+</footer>
+
+<div id="lb" role="dialog" aria-label="Certificate preview"><img alt=""></div>
+<script src="js/main.js" defer></script>
+</body>
+</html>
