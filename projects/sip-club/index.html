@@ -33,7 +33,7 @@ nav .wrap{display:flex;align-items:center;gap:20px;background:var(--paper);borde
 .logo{font-weight:700;font-size:1.5rem;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
 .logo svg{width:22px;height:30px;color:var(--pink)}
 nav ul{display:flex;gap:4px;list-style:none;margin:0 auto;padding:0}
-nav ul a{padding:8px 18px;border-radius:999px;font-weight:500}
+nav ul a{padding:8px 18px;border-radius:999px;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
 nav ul a:hover,nav ul a.on{background:var(--sun);color:#10264a}
 nav .btn{padding:9px 22px;box-shadow:none;border:0}
 
@@ -94,6 +94,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
   section{padding:60px 0}
 }
 @media (max-width:480px){.menu{grid-template-columns:1fr}}
+.flinks a{display:inline-block;padding:10px 4px;text-decoration:underline;text-underline-offset:3px;font-weight:600;color:var(--ink)}
+.btn{min-height:44px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -173,13 +175,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
     <div class="box order pop">
       <h2>Skip the line</h2>
       <p>Order from your phone and pick up at the window when it’s ready.</p>
-      <a class="btn alt pop" href="#top">Start my order</a>
+      <a class="btn alt pop" href="#menu">Pick a drink</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap"><span>© 2026 Sip Club. A student design concept.</span><span>Menu · About · Visit</span></div>
+  <div class="wrap"><span>© 2026 Sip Club. A student design concept.</span><span class="flinks"><a href="#menu">Menu</a> · <a href="#why">About</a> · <a href="#visit">Visit</a> · <a href="../../index.html#projects">Back to portfolio</a></span></div>
 </footer>
 </body>
 </html>

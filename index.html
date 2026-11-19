@@ -11,6 +11,7 @@
 <meta name="description" content="Portfolio of an IT student: web design, system analysis and development projects, certificates and contact details.">
 <meta property="og:title" content="John Kyle P. Uriarte | Portfolio">
 <meta property="og:description" content="Web design, system analysis and development projects.">
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,7 @@
   </div>
 </nav>
 
-<main id="main">
+<main id="main" tabindex="-1">
 <header class="hero" id="home">
   <div class="wrap">
     <div>
@@ -55,12 +56,12 @@
   </div>
 </header>
 
-<div class="strip" aria-hidden="true"><div class="list"><span>Web design</span>•<span>Computer servicing</span>•<span>Networking</span>•<span>System analysis</span>•<span>UML</span>•<span>HTML &amp; CSS</span>•<span>Teamwork</span></div></div></div>
+<div class="strip" aria-hidden="true"><div class="list"><span>Web design</span>•<span>Computer servicing</span>•<span>Networking</span>•<span>System analysis</span>•<span>UML</span>•<span>HTML &amp; CSS</span>•<span>Teamwork</span></div></div>
 
-<section class="about" id="about">
+<section class="about" id="about" aria-labelledby="about-h">
   <div class="wrap">
     <div>
-      <h2>About me</h2>
+      <h2 id="about-h">About me</h2>
       <p>I’m a student at Cavite State University (CvSU) – Bacoor Campus, studying information technology. I enjoy turning ideas into clear designs, from use case diagrams on paper to colorful pages in the browser.</p>
       <p>My interest in IT started long before college. I spent my free time fixing computers, debugging code, reverse engineering programs and troubleshooting problems. In senior high school I took the TVL track, ICT strand, with a specialization in Computer Systems Servicing (CSS), where I turned that curiosity into hands-on training.</p>
       <p>I work well in a team. In class, my group planned an online food ordering system together, defining its users, features and requirements before any code was written.</p>
@@ -81,10 +82,10 @@
   </div>
 </section>
 
-<section id="projects">
+<section id="projects" aria-labelledby="projects-h">
   <div class="wrap">
-    <h2>Projects</h2>
-    <p class="lead">A few things I’ve designed and built during my studies.</p>
+    <h2 id="projects-h">Projects</h2>
+    <p class="lead">A few things I’ve designed and built during my studies.<br><span class="tip"><strong>Tip:</strong> tap or click any picture to enlarge it.</span></p>
     <div class="grid projects">
       <article class="card project pop">
         <span class="tag">System design</span>
@@ -112,7 +113,7 @@
           <li>Built with HTML and CSS only, using Grid, Flexbox and light and dark modes</li>
           <li>Responsive: the menu goes from four columns to two to one on smaller screens</li>
           </ul>
-          <a class="btn alt" href="projects/sip-club/index.html" target="_blank" rel="noopener" aria-label="View live demo of the Sip Club website (opens in a new tab)">View live demo</a>
+          <a class="btn alt" href="projects/sip-club/index.html" target="_blank" rel="noopener" aria-label="View live demo of the Sip Club website (opens in a new tab)">View live demo <span class="ext" aria-hidden="true">↗</span></a>
         </div>
       </article>
       <article class="card project pop">
@@ -122,7 +123,7 @@
           <h3>This portfolio</h3>
           <p>My personal website, made to introduce myself and share my skills, projects and what I’m learning.</p>
           <ul>
-          <li>One page with four sections: Home, About, Projects &amp; Learning and Contact</li>
+          <li>One page with four sections: Home, About, Projects &amp; Certificates and Contact</li>
           <li>A playful look with bold outlines, a yellow, sky blue, mint and coral color scheme, and light and dark modes</li>
           <li>Built with HTML, CSS (Grid, Flexbox and animations) and a little JavaScript, with no frameworks</li>
           <li>Works on phones, tablets and computers, with a mobile menu, SEO metadata and image descriptions</li>
@@ -161,28 +162,33 @@
   </div>
 </section>
 
-<section class="contact" id="contact" style="padding-top:0">
+<section class="contact" id="contact" style="padding-top:0" aria-labelledby="contact-h">
   <div class="wrap">
     <div class="box reach pop">
-      <h2>Let’s talk</h2>
+      <h2 id="contact-h">Let’s talk</h2>
       <p>Have a project, internship or idea? Send me a message and I’ll reply soon.</p>
+      <p class="help"><strong>How to reach me:</strong> use the form to start an email, copy my email address, or message me on Facebook or by phone.</p>
       <ul>
         <li>Email: <a href="mailto:johnkyleuriarte2309@gmail.com">johnkyleuriarte2309@gmail.com</a></li>
         <li class="copy-row"><button class="copy" id="copy" type="button">Copy email address</button><span id="copy-status" role="status" aria-live="polite"></span></li>
-        <li>GitHub: <a href="https://github.com/ImJohnKyle" rel="noopener">github.com/ImJohnKyle</a></li>
-        <li>Facebook: <a href="https://www.facebook.com/johnkyle.uriarte.3" target="_blank" rel="noopener" aria-label="John Kyle Uriarte on Facebook (opens in a new tab)">John Kyle Uriarte</a></li>
+        <li>GitHub: <a href="https://github.com/ImJohnKyle" target="_blank" rel="noopener" aria-label="John Kyle Uriarte on GitHub (opens in a new tab)">github.com/ImJohnKyle<span class="ext" aria-hidden="true">↗</span></a></li>
+        <li>Facebook: <a href="https://www.facebook.com/johnkyle.uriarte.3" target="_blank" rel="noopener" aria-label="John Kyle Uriarte on Facebook (opens in a new tab)">John Kyle Uriarte<span class="ext" aria-hidden="true">↗</span></a></li>
         <li>Phone: <a href="tel:+639998521172">0999 852 1172</a></li>
         <li>Location: Bacoor, Cavite, Philippines</li>
       </ul>
     </div>
     <div class="box msg pop">
       <h2>Send a message</h2>
-      <div>
-        <label for="n">Your name</label><input id="n" autocomplete="name">
-        <label for="m">Message</label><div class="ta"><textarea id="m" aria-required="true"></textarea><span class="grip" aria-hidden="true" title="Drag to resize"></span></div>
-        <button class="btn alt pop" id="send" type="button">Send by email</button>
+      <form id="contact-form" novalidate>
+        <label for="n">Your name <span class="hint">(optional)</span></label>
+        <input id="n" name="name" type="text" autocomplete="name" enterkeyhint="next">
+        <label for="m">Message <span class="hint">(required)</span></label>
+        <div class="ta"><textarea id="m" name="message" required aria-required="true" aria-describedby="status send-help" enterkeyhint="send"></textarea><span class="grip" aria-hidden="true" title="Drag to resize"></span></div>
+        <button class="btn alt pop" id="send" type="submit">Send by email</button>
         <p class="status" id="status" role="status" aria-live="polite"></p>
-      </div>
+        <button class="copy" id="copy-msg" type="button" hidden>Copy my message instead</button>
+        <p class="help" id="send-help">Pressing “Send by email” opens a draft in your email app. You send it from there. Shortcut: Ctrl+Enter (⌘+Enter on Mac).</p>
+      </form>
     </div>
   </div>
   <div class="wrap">
@@ -196,8 +202,10 @@
 </main>
 
 <footer>
-  <div class="wrap"><span>© 2026 John Kyle Uriarte. All rights reserved.</span><span><a href="#home">Back to top</a></span></div>
+  <div class="wrap"><span>© 2026 John Kyle Uriarte. All rights reserved.</span><span><a class="totop" href="#home">Back to top <span aria-hidden="true">↑</span></a></span></div>
 </footer>
+
+<button class="theme" id="theme" type="button" hidden><span class="theme-ico" aria-hidden="true">🌙</span><span class="theme-label">Dark mode</span></button>
 
 <div id="lb" role="dialog" aria-modal="true" aria-label="Enlarged picture"><button class="lb-close" type="button" aria-label="Close enlarged picture">✕</button><img alt=""></div>
 <script src="js/main.js" defer></script>
